@@ -1,0 +1,25 @@
+{
+  "name": "maschinenservice-hermanns",
+  "version": "0.0.1",
+  "description": "Business website for Andreas",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/danielemery/maschinenservice-hermanns.git"
+  },
+  "author": "Daniel Emery <danielremery@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/danielemery/maschinenservice-hermanns/issues"
+  },
+  "homepage": "https://github.com/danielemery/maschinenservice-hermanns#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0-beta.1"
+  }
+}
