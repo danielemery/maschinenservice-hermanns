@@ -1,0 +1,26 @@
+{% set navigation_items = [
+  { title: "Startseite", url: "/" },
+  { title: "Dienstleistungen", url: "/produkte-und-dienstleistungen/" },
+  { title: "Partner", url: "/partner/" },
+  { title: "Über mich", url: "/ueber-mich/" },
+  { title: "Kontakt", url: "/kontakt/" }
+] %}
+
+<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Oberes Menü">
+  <button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">Menü</button>
+  <div class="menu-hauptmenue-container">
+    <ul id="top-menu" class="menu">
+    {% for item in navigation_items %}
+      <li class="menu-item menu-item-type-post_type menu-item-object-page{% if item.url == page.url %} current-menu-item current_page_item{% endif %}">
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+  <a href="#content" class="menu-scroll-down">
+    <svg class="icon icon-arrow-right" aria-hidden="true" role="img">
+      <use href="#icon-arrow-right" xlink:href="#icon-arrow-right"></use>
+    </svg>
+    <span class="screen-reader-text">Zum Inhalt nach unten scrollen</span>
+  </a>
+</nav>

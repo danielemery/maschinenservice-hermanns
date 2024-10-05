@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de-DE" class="no-js no-svg">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+        <script>
+            (function (html) {
+                html.className = html
+                    .className
+                    .replace(/\bno-js\b/, 'js')
+            })(document.documentElement);
+        </script>
+        <title>
+            {% block title %}Startseite{% endblock %} - Maschinenservice Hermanns
+        </title>
+        <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+        <link rel='dns-prefetch' href='//s.w.org'/>
+        <link href='https://fonts.gstatic.com' crossorigin rel='preconnect'/>
+        <link rel='stylesheet' id='twentyseventeen-fonts-css' href='https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&#038;subset=latin%2Clatin-ext' type='text/css' media='all'/>
+        <link rel='stylesheet' id='twentyseventeen-style-css' href='/assets/css/style.css' type='text/css' media='all'/>
+        <link rel='stylesheet' id='twentyseventeen-colors-dark-css' href='/assets/css/colors-dark.css' type='text/css' media='all'/>
+        <script type='text/javascript' src='/assets/js/jquery.js'></script>
+        <script type='text/javascript' src='/assets/js/jquery-migrate.min.js'></script>
+        <link rel="canonical" href="https://www.maschinenservice-hermanns.de/"/>
+        <link rel='shortlink' href='https://www.maschinenservice-hermanns.de/'/>
+    </head>
+    <body class="home page-template-default page page-id-16 twentyseventeen-front-page has-header-image page-one-column colors-dark">
+        <div id="page" class="site">
+            {% include "./header.njk" %}
+            <div class="site-content-contain">
+                <div id="content" class="site-content">
+                    <div id="primary" class="content-area">
+                        <article class="twentyseventeen-panel page type-page">
+                            <div class="panel-content">
+                                <div class="wrap">
+                                    <header class="entry-header">
+                                        <h2 class="entry-title">
+                                            {% block heading %}Startseite{% endblock %}
+                                        </h2>
+                                    </header>
+                                    <div class="entry-content">
+                                        {% block content %}{% endblock %}
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                {% include "./footer.njk" %}
+            </div>
+        </div>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var twentyseventeenScreenReaderText = {
+                "quote": "<svg class=\"icon icon-quote-right\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-quote-right\" xlink:href=\"#icon-quote-right\"><\/use> <\/svg>",
+                "expand": "Untermen\u00fc anzeigen",
+                "collapse": "Untermen\u00fc verbergen",
+                "icon": "<svg class=\"icon icon-angle-down\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-angle-down\" xlink:href=\"#icon-angle-down\"><\/use> <span class=\"svg-fallback icon-angle-down\"><\/span><\/svg>"
+            };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='/assets/js/skip-link-focus-fix.js'></script>
+        <script type='text/javascript' src='/assets/js/navigation.js'></script>
+        <script type='text/javascript' src='/assets/js/global.js'></script>
+        <script type='text/javascript' src='/assets/js/jquery.scrollTo.js'></script>
+        <script type='text/javascript' src='/assets/js/wp-embed.min.js'></script>
+    </body>
+</html>
