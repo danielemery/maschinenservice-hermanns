@@ -25,27 +25,25 @@
         <link rel="canonical" href="https://www.maschinenservice-hermanns.de/"/>
         <link rel='shortlink' href='https://www.maschinenservice-hermanns.de/'/>
     </head>
-    <body class="home page-template-default page page-id-16 twentyseventeen-front-page has-header-image page-one-column colors-dark">
+    <body class="{% if page.url == '/' %}home twentyseventeen-front-page {% endif %}page-template-default page has-header-image page-one-column colors-dark">
         <div id="page" class="site">
             {% include "./header.njk" %}
             <div class="site-content-contain">
-                <div id="content" class="site-content">
-                    <div id="primary" class="content-area">
-                        <article class="twentyseventeen-panel page type-page">
-                            <div class="panel-content">
-                                <div class="wrap">
-                                    <header class="entry-header">
-                                        <h2 class="entry-title">
-                                            {% block heading %}Startseite{% endblock %}
-                                        </h2>
-                                    </header>
-                                    <div class="entry-content">
-                                        {% block content %}{% endblock %}
-                                    </div>
+                <div id="primary" class="content-area">
+                    <article class="twentyseventeen-panel page type-page">
+                        <div class="panel-content">
+                            <div class="wrap">
+                                <header class="entry-header">
+                                    <h2 class="entry-title">
+                                        {% block heading %}Startseite{% endblock %}
+                                    </h2>
+                                </header>
+                                <div class="entry-content">
+                                    {% block content %}{% endblock %}
                                 </div>
                             </div>
-                        </article>
-                    </div>
+                        </div>
+                    </article>
                 </div>
                 {% include "./footer.njk" %}
             </div>
